@@ -26,6 +26,6 @@ func Setup() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	db.AutoMigrate(models.Book{})
+	db.AutoMigrate(models.Book{}) // create table autoatically in the DB
 	DB = db
 }

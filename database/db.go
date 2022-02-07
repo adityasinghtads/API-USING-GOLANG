@@ -15,6 +15,9 @@ func GetDB() *gorm.DB {
 	return DB
 }
 
+// setup function should be called first so that 
+// we can connect with the database ... 
+
 func Setup() {
 	host := "localhost"
 	port := "5432"

@@ -5,6 +5,8 @@ import (
 
 	"github.com/adityasinghtads/api_go/models"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
+	_ "github.com/lib/pq"
 )
 
 // gorm can be used with postgres mysql orace mssql
@@ -15,8 +17,8 @@ func GetDB() *gorm.DB {
 	return DB
 }
 
-// setup function should be called first so that 
-// we can connect with the database ... 
+// setup function should be called first so that
+// we can connect with the database ...
 
 func Setup() {
 	host := "localhost"

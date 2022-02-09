@@ -6,7 +6,6 @@ import (
 	"github.com/adityasinghtads/api_go/models"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
-	_ "github.com/lib/pq"
 )
 
 // gorm can be used with postgres mysql orace mssql
